@@ -35,10 +35,26 @@
 
     h1
       position: relative
-      font-size: 68px
+      font-size: 65px
       font-weight: 900
       line-height: 1
       z-index: 1
+     
+  
+
+      span
+        display: block
+
+
+      .h1_space_first
+        
+        margin-left: 90px
+
+      .h1_space_second
+        
+        margin-left: 200px
+
+     
 
     button
       position: relative
@@ -78,7 +94,7 @@
 
   &--options
     display: flex
-    justify-content: space-between
+    justify-content: space-around
     margin: 0
     padding: 0
     list-style: none
@@ -89,18 +105,22 @@
       color: $muted-gray
       transition: color .2s ease-in-out
 
+      .fab
+        font-size: 45px
+      
+
+
       &:hover
         color: $white
 
-    h3
-      font-size: 16px
-      text-transform: uppercase
+    // h3
+    //   font-size: 16px
+    //   text-transform: uppercase
 
-    p
-      margin-bottom: 0
+    // p
+    //   margin-bottom: 0
 
-@media (max-width: 900px)
-
+@media screen and ( max-width: 1200px)
   .intro
 
     &--banner
@@ -108,6 +128,34 @@
 
       h1
         font-size: 55px
+
+        .h1_space_first
+          margin-left: 75px
+
+        .h1_space_second
+          margin-left: 165px
+        
+      img
+        width: 430px
+  
+  
+
+@media (max-width: 900px)
+
+  .intro
+
+    &--banner
+      height: 356px
+
+      h1
+        font-size: 50px
+
+        .h1_space_first
+          margin-left: 66px
+
+        .h1_space_second
+          margin-left: 155px
+
 
       img
         width: 430px
@@ -134,12 +182,15 @@
         width: 330px
 
     &--options
-      display: block
+      // display: fle
 
       & > a
         display: block
         max-width: 100%
         margin: 0 0 30px 0
+
+        .fab
+          font-size: 30px
 
         &:last-child
           margin-bottom: 0
@@ -172,4 +223,5 @@
         margin-top: 0
 
     &--options
-      display: none
+      // display: none
+      

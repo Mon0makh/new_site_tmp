@@ -3,9 +3,12 @@
 <head>
   <title>the Hub</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css'>
+  <link rel="stylesheet" href="./assets/css/slider/slider.css">
 </head>
 <body>
 
@@ -49,7 +52,12 @@
           <li class="l-section section section--is-active">
             <div class="intro">
               <div class="intro--banner">
-                <h1>Мыслю -<br>&nbsp; &nbsp; &nbsp; Существую<br>Действую - <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Живу</h1>
+                <h1>
+                  <span>Мыслю -</span> 
+                  <span class="h1_space_first">Существую</span> 
+                  <span>Действую -</span> 
+                  <span class="h1_space_second">Живу</span>
+                </h1>
                 <button class="cta">Погружение
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
                   <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
@@ -62,16 +70,16 @@
               </div>
               <div class="intro--options">
                 <a href="#0">
-                  <h3>Metiew &amp; Smith</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                  <i class="fab fa-instagram" title="Instagram"></i>
                 </a>
                 <a href="#0">
-                  <h3>Fantasy interactive</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                  <i class="fab fa-telegram-plane" title="Telegram"></i>
                 </a>
                 <a href="#0">
-                  <h3>Paul &amp; shark</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                  <i class="fab fa-youtube" title="YouTube"></i>
+                </a>
+                <a href="#0">
+                  <i class="fab fa-github" title="GitHub"></i>
                 </a>
               </div>
             </div>
@@ -94,6 +102,79 @@
           <!-- 3. Лица -->
           <li class="l-section section">
             <div class="hire">
+                            <!-- Slider main container s-->
+              <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="picture" >
+                      <img src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b4e41a670c097c8fd2834579f5d5958&auto=format&fit=crop&w=633&q=80" alt="" >
+                    </div>
+                    <div class="detail">
+                      <h2>Marie Edwards</h2>
+                      <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nemo repudiandae labore nam quibusdam? Dolores, animi inventore. Sed, earum iste?</p></span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="picture">
+                      <img src="https://images.unsplash.com/photo-1511485977113-f34c92461ad9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=49899e285952107fdfd9415b8d3bf74a&auto=format&fit=crop&w=634&q=80" alt="">
+                    </div>
+                    <div class="detail">
+                      <h2>Kelly Woods</h2>
+                      <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nemo repudiandae labore nam quibusdam? Dolores, animi inventore. Sed, earum iste?</p></span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="picture">
+                      <img src="https://images.unsplash.com/photo-1502980426475-b83966705988?ixlib=rb-0.3.5&s=739aef35459daa8aaeaa55363d492bc1&auto=format&fit=crop&w=673&q=80" alt="">
+                    </div>
+                    <div class="detail">
+                      <h2>Roger Rice</h2>
+                      <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nemo repudiandae labore nam quibusdam? Dolores, animi inventore. Sed, earum iste?</p></span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="picture">
+                      <img src="https://images.unsplash.com/photo-1502768040783-423da5fd5fa0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0c6416353c255d2746a68c8a83943bdf&auto=format&fit=crop&w=634&q=80" alt="">
+                    </div>
+                    <div class="detail">
+                      <h2>Jessica Garcia</h2>
+                      <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nemo repudiandae labore nam quibusdam? Dolores, animi inventore. Sed, earum iste?</p></span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="picture">
+                      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9a138cf8acd85036bd292d7f10074e79&auto=format&fit=crop&w=634&q=80" alt="">
+                    </div>
+                    <div class="detail">
+                      <h2>Sean Adams</h2>
+                      <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nemo repudiandae labore nam quibusdam? Dolores, animi inventore. Sed, earum iste?</p></span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="picture">
+                      <img src="https://images.unsplash.com/photo-1500080209535-717dd4ebaa6b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ddee81e2e574e8190b07139ddb0f1938&auto=format&fit=crop&w=687&q=80" alt="">
+                    </div>
+                    <div class="detail">
+                      <h2>Crystal Davidson</h2>
+                      <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil maxime a odio aperiam rerum molestiae ex voluptatem magnam dicta ratione?</p></span>
+                    </div>
+                  </div>
+                  
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+              
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div> 
+                <div class="swiper-button-next"></div>
+
             </div>
           </li>
           <!-- 4. Проекты -->
@@ -128,5 +209,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
 <script src="assets/js/functions-min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js'></script>
+<script  src="./assets/js/sliderjs/slider.js"></script>
+<script src="https://kit.fontawesome.com/13b5c64cf0.js" crossorigin="anonymous"></script>
 </body>
 </html>

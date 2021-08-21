@@ -9,9 +9,6 @@
 .swiper-container h2{
   text-align: left;
 }
-
-
-
 .swiper-slide {
   background-position: center;
   background-size: cover;
@@ -41,7 +38,7 @@
   padding: 25px 20px;
   font-weight: 600;
   text-align: left;
-  color: #fff;
+  color: #0C0C0C;
   width: 100%;
   line-height: 25px;
   
@@ -74,12 +71,10 @@
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'%3E%3Cpath d='M0,22L22,0l2.1,2.1L4.2,22l19.9,19.9L22,44L0,22L0,22L0,22z' fill='%23d61313'/%3E%3C/svg%3E");
 }
 
-
-
 .swiper-slide-shadow-right::after,
 .swiper-slide-shadow-left::after{
   background: rgb(0,0,0);
-  background: linear-gradient(167deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6982143199076505) 49%);
+  background: linear-gradient(167deg, rgba(12,12,12,1) 0%, rgba(12,12,12,0.95) 49%);
   content: "";
   display: block;
   width: 820px;
@@ -143,7 +138,7 @@
     width: 77%;
     line-height: 20px;
     box-sizing: border-box;
-    background-color: rgba(30, 30, 30, 0);
+    background-color: rgba(150, 30, 30, 0);
     border-radius: 0 0 10px 10px;
     color: rgb(226, 222, 222);
     text-align: center;

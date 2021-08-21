@@ -6,7 +6,7 @@ var swiper = new Swiper(".swiper-container", {
   centeredSlides: true,
   slidesPerView: "auto",
   loop: true,
-  loopedSlides: 4,
+  loopedSlides: 5,
   autoHeight: true,
   initialSlide: 2,
   

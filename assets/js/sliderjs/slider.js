@@ -1,5 +1,5 @@
 var swiper = new Swiper(".swiper-container", {
-  spaceBetween: 350,
+
   speed: 1000,
   effect: "coverflow",
   grabCursor: true,

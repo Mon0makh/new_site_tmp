@@ -784,9 +784,11 @@ body {
     margin-top: 50px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 600px) {
   .about_container {
+    margin: 0;
     overflow: scroll;
+    height: 70%;
   }
 }
 .team_slider {

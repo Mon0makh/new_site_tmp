@@ -778,6 +778,10 @@ body {
   font-size: 30px;
   text-align: center;
 }
+.about .about_list li {
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
 
 @media (max-width: 900px) {
   .about_container {
@@ -785,10 +789,14 @@ body {
   }
 }
 @media (max-width: 600px) {
-  .about_container {
+  .about .about_container {
     margin: 0;
     overflow: scroll;
     height: 70%;
+  }
+  .about .about_list li {
+    margin-bottom: 10px;
+    margin-left: 0;
   }
 }
 .team_slider {

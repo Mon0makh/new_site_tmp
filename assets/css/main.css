@@ -790,9 +790,9 @@ body {
 }
 @media (max-width: 600px) {
   .about .about_container {
-    margin: 0;
-    overflow: scroll;
-    height: 70%;
+    margin: 20px;
+    overflow: auto;
+    height: 550px;
   }
   .about .about_list li {
     margin-bottom: 10px;

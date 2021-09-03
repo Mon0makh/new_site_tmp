@@ -383,37 +383,48 @@
           <!-- 5. Регистрация -->
            <li class="l-section section">
             <div class="hire">
-              <h2>Регистрация</h2>
-              <form>
-                <input id="input-1" type="text" placeholder="John Doe" required autofocus class="form_input" />
-                <label for="input-1">
-                  <span class="label-text">Full Name</span>
-                  <span class="nav-dot"></span>
-                  <div class="signup-button-trigger form_btn">Sign Up</div>
-                </label>
-                <input id="input-2" type="text" placeholder="john" required class="form_input"/>
-                <label for="input-2">
-                  <span class="label-text">Username</span>
-                  <span class="nav-dot"></span>
-                </label>
-                <input id="input-3" type="email" placeholder="email@address.com" required class="form_input"/>
-                <label for="input-3">
-                  <span class="label-text">Email</span>
-                  <span class="nav-dot"></span>
-                </label>
-                <input id="input-4" type="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" required class="form_input"/>
-                <label for="input-4">
-                  <span class="label-text">Password</span>
-                  <span class="nav-dot"></span>
-                </label>
-                <input id="input-5" type="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" required class="form_input"/>
-                <label for="input-5">
-                  <span class="label-text">Confirm Password</span>
-                  <span class="nav-dot"></span>
-                </label>
-                <button type="submit" class="form_btn">Create Your Account</button>
-                <p class="tip">Press Tab</p>
-                <div class="signup-button">Sign Up</div>
+              <form id="#hire_form"  action="#0">
+                <div class="hubs">
+                  <p>Choose your hub</p>
+                  <div class="hub_choose">
+                    <label for="#hub1" class="hub_labels lab1"> <img src="./assets/img/sh logos/art.png" alt="" class="hub_img hub_img1"><p class="hub_name"> Art hub</p></label>
+                    <label for="#hub2" class="hub_labels lab2"> <img src="./assets/img/sh logos/hard.png" alt="" class="hub_img hub_img2"><p class="hub_name">Hard hub</p> </label>
+                    <label for="#hub3" class="hub_labels lab3"> <img src="./assets/img/sh logos/dev.png" alt="" class="hub_img hub_img3"><p class="hub_name">Dev hub</p> </label>
+                    <label for="#hub4" class="hub_labels lab4"> <img src="./assets/img/sh logos/soc.png" alt="" class="hub_img hub_img4"> <p class="hub_name">Soc hub</p></label>
+                    <label for="#hub5" class="hub_labels lab5"> <img src="./assets/img/sh logos/geek.png" alt="" class="hub_img hub_img5"><p class="hub_name">Geek hub</p> </label>
+                  </div>
+                </div>
+                  <input id="input-1" type="text" placeholder="John Doe" autofocus required class="form_input form_name" />
+                  <label for="input-1">
+                    <span class="label-text">Full Name</span>
+                    <span class="nav-dot"></span>
+                    <div class="signup-button-trigger form_btn">Sign</div>
+                  </label>
+                  <input id="input-2" type="email" placeholder="email@address.com" required class="form_input form_email"/>
+                  <label for="input-2">
+                    <span class="label-text">Email</span>
+                    <span class="nav-dot"></span>
+                  </label>
+                  
+                  <input id="input-3" type="tel" placeholder = "8 707 558 0415" pattern="[0-9] [0-9]{3} [0-9]{3} [0-9]{4}" required  class="form_input form_number"/>
+                  <label for="input-3">
+                    <span class="label-text">Phone number</span>
+                    <span class="nav-dot"></span>
+                  </label>
+                  <textarea name="About yourself"  id="input-4" cols="20" rows="3" minlength="50" maxlength="300" class="form_txt_area form_txt" required form="#hire_form" placeholder="Write here"></textarea>
+                  <label for="input-4">
+                    <span class="label-text">Tell about yourself</span>
+                    <span class="nav-dot"></span>
+                  </label>
+                  
+                  <input type="checkbox" name="art_hub" id="#hub1"  value="art_hub" class="hub_check"> 
+                  <input type="checkbox" name="hard_hub" id="#hub2"  value="hard_hub" class="hub_check"> 
+                  <input type="checkbox" name="dev_hub" id="#hub3"  value="dev_hub" class="hub_check"> 
+                  <input type="checkbox" name="soc_hub" id="#hub4"  value="soc_hub" class="hub_check">
+                  <input type="checkbox" name="geek_hub" id="#hub5"  value="geek_hub" class="hub_check">
+                  <button type="submit" class="form_btn" value="">Submit </button>
+                  <div class="signup-button">Sign</div>
+                  
               </form>
             </div>
           </li>
@@ -436,6 +447,7 @@
 <script src="assets/js/functions-min.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js'></script>
 <script  src="./assets/js/sliderjs/slider.js"></script>
+<script src="./assets/js/formjs/form.js"></script>
 <script src="https://kit.fontawesome.com/13b5c64cf0.js" crossorigin="anonymous"></script>
 </body>
 </html>

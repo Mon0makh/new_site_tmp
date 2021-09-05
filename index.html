@@ -383,49 +383,61 @@
           <!-- 5. Регистрация -->
            <li class="l-section section">
             <div class="hire">
-              <form id="#hire_form"  action="#0">
-                <div class="hubs">
-                  <p>Choose your hub</p>
-                  <div class="hub_choose">
-                    <label for="#hub1" class="hub_labels lab1"> <img src="./assets/img/sh logos/art.png" alt="" class="hub_img hub_img1"><p class="hub_name"> Art hub</p></label>
-                    <label for="#hub2" class="hub_labels lab2"> <img src="./assets/img/sh logos/hard.png" alt="" class="hub_img hub_img2"><p class="hub_name">Hard hub</p> </label>
-                    <label for="#hub3" class="hub_labels lab3"> <img src="./assets/img/sh logos/dev.png" alt="" class="hub_img hub_img3"><p class="hub_name">Dev hub</p> </label>
-                    <label for="#hub4" class="hub_labels lab4"> <img src="./assets/img/sh logos/soc.png" alt="" class="hub_img hub_img4"> <p class="hub_name">Soc hub</p></label>
-                    <label for="#hub5" class="hub_labels lab5"> <img src="./assets/img/sh logos/geek.png" alt="" class="hub_img hub_img5"><p class="hub_name">Geek hub</p> </label>
+              <div class="wrapper">
+                <form class="steps">
+                  <div class="hubs">
+                    <p>Choose your hub</p>
+                    <div class="hub_choose">
+                      <label for="#hub1" class="hub_labels lab1"> <img src="./assets/img/sh logos/art.png" alt="" class="hub_img hub_img1"><p class="hub_name"> Art hub</p></label>
+                      <label for="#hub2" class="hub_labels lab2"> <img src="./assets/img/sh logos/hard.png" alt="" class="hub_img hub_img2"><p class="hub_name">Hard hub</p> </label>
+                      <label for="#hub3" class="hub_labels lab3"> <img src="./assets/img/sh logos/dev.png" alt="" class="hub_img hub_img3"><p class="hub_name">Dev hub</p> </label>
+                      <label for="#hub4" class="hub_labels lab4"> <img src="./assets/img/sh logos/soc.png" alt="" class="hub_img hub_img4"> <p class="hub_name">Soc hub</p></label>
+                      <label for="#hub5" class="hub_labels lab5"> <img src="./assets/img/sh logos/geek.png" alt="" class="hub_img hub_img5"><p class="hub_name">Geek hub</p> </label>
+                    </div>
                   </div>
-                </div>
-                  <input id="input-1" type="text" placeholder="John Doe" autofocus required class="form_input form_name" />
-                  <label for="input-1">
-                    <span class="label-text">Full Name</span>
-                    <span class="nav-dot"></span>
-                    <div class="signup-button-trigger form_btn">Sign</div>
-                  </label>
-                  <input id="input-2" type="email" placeholder="email@address.com" required class="form_input form_email"/>
-                  <label for="input-2">
-                    <span class="label-text">Email</span>
-                    <span class="nav-dot"></span>
-                  </label>
-                  
-                  <input id="input-3" type="tel" placeholder = "8 707 558 0415" pattern="[0-9] [0-9]{3} [0-9]{3} [0-9]{4}" required  class="form_input form_number"/>
-                  <label for="input-3">
-                    <span class="label-text">Phone number</span>
-                    <span class="nav-dot"></span>
-                  </label>
-                  <textarea name="About yourself"  id="input-4" cols="20" rows="3" minlength="50" maxlength="300" class="form_txt_area form_txt" required form="#hire_form" placeholder="Write here"></textarea>
-                  <label for="input-4">
-                    <span class="label-text">Tell about yourself</span>
-                    <span class="nav-dot"></span>
-                  </label>
-                  
                   <input type="checkbox" name="art_hub" id="#hub1"  value="art_hub" class="hub_check"> 
                   <input type="checkbox" name="hard_hub" id="#hub2"  value="hard_hub" class="hub_check"> 
                   <input type="checkbox" name="dev_hub" id="#hub3"  value="dev_hub" class="hub_check"> 
                   <input type="checkbox" name="soc_hub" id="#hub4"  value="soc_hub" class="hub_check">
                   <input type="checkbox" name="geek_hub" id="#hub5"  value="geek_hub" class="hub_check">
-                  <button type="submit" class="form_btn" value="">Submit </button>
-                  <div class="signup-button">Sign</div>
-                  
-              </form>
+                  <div class="hubs_input">
+                    <div>
+                    
+                      <div class="step1" data-bind="fadeVisible: step() == 1, css: {current : step() == 1}, hasfocus: step() == 1">
+                        <label class="form_labels">What's your name?</label>
+                        <input type="text" name="name" data-bind="value: name" class="form_inputs">
+                      </div>
+                      <div class="step2" data-bind="fadeVisible: step() == 2, css: {current : step() == 2}, hasfocus: step() == 2">
+                        <label class="form_labels">What's your e-mail?</label>
+                        <input type="email" name="email" data-bind="value: email" class="form_inputs">
+                      </div>
+                      <div class="step3" data-bind="fadeVisible: step() == 3, css: {current : step() == 3}, hasfocus: step() == 3">
+                        <label class="form_labels">Can I call you?</label>
+                        <input type="phone" name="phone" data-bind="value: phone" class="form_inputs">
+                      </div>
+                      <div class="step4" data-bind="fadeVisible: step() == 4, css: {current : step() == 4}, hasfocus: step() == 4">
+                        <label class="form_labels">What do you want to talk about?</label>
+                        <input type="text" name="subject" data-bind="value: subject" class="form_inputs">
+                      </div>
+                      <div class="step5" data-bind="fadeVisible: step() == 5, css: {current : step() == 5}, hasfocus: step() == 5">
+                        <label class="form_labels">Thank you, <span data-bind="text: name"></span>!<br>
+                        Soon we'll be in touch. </label>
+                        <br>
+                      </div>
+                      
+                    </div>
+                    <div class="progress">
+                      <div class="input-bar"></div>
+                      <div class="progress-bar"></div>
+                    </div>
+                    <div class="steps-navigation">
+                      <button class="prev form_btn" data-bind="visible: step() > 1, click: prev">previous</button>
+                      <button class="next form_btn" data-bind="visible: step() < 4, click: next">next</button>
+                      <button id="done" class="form_btn" data-bind="visible: step() == 4, click: next">done</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </li>
         </ul>
@@ -447,7 +459,9 @@
 <script src="assets/js/functions-min.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js'></script>
 <script  src="./assets/js/sliderjs/slider.js"></script>
-<script src="./assets/js/formjs/form.js"></script>
 <script src="https://kit.fontawesome.com/13b5c64cf0.js" crossorigin="anonymous"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-debug.js'></script>
+<script src="./assets/js/formjs/form.js"></script>
 </body>
 </html>

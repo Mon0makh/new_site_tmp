@@ -16,239 +16,120 @@
     font-size: 30px
     text-align: center
 
-.form_txt_area,
-.form_input, 
-.form_btn 
-  position: fixed
-  top: 50%
-  left: 50%
-  transform: translate(-50%, -300%)
+.steps
+  font-family: "Quicksand", sans-serif
+  
+  &:active, &:focus
+    outline: none
+
+
+.wrapper
+  animation: fadeIn 0.8s
+
+.form_labels
   display: block
-  width: 50vw
-  opacity: 0
-  pointer-events: none
-  transition: all .5s cubic-bezier(.4, .25, .8, .3)
-
-
-.form_txt_area
-  margin-top: 120px
-  resize: none
-  // height: 200px
- 
-
-
-
-.form_txt_area,
-.form_input 
-  padding: .25rem 0
-  border: 0
-  border-bottom: 1px solid $primary
-  outline: 0
-  background: transparent
   color: #fff
-  font-size: 2rem
-  line-height: 4rem
-  letter-spacing: .125rem
-  transition: all .5s cubic-bezier(.4, .25, .8, .3)
-
-
-.form_txt_area::selection,
-.form_input::selection 
-  background: rgba($primary, 0.25)
-
-
-.form_btn,
-.signup-button 
-  cursor: pointer
-  padding: .25em 0
-  border: 0
-  outline: 0
-  background: $primary
-  color: rgba(#fff, 0.85)
-  font-size: 2rem
-  line-height: 3.6rem
-  letter-spacing: .0625rem
-  box-shadow: 0 3px 5px 1px rgba(#000, 0.25)
-  text-shadow: 0 -2px 0 rgba(#000, 0.25), 0 1px 0 rgba(#fff, 0.2)
-
-
-
-.form_txt_area:focus,
-.form_input:focus,
-.form_btn:focus 
-  opacity: 1
-  transform: translate(-50%, -100%)
-  pointer-events: auto
-  transition: all .4s cubic-bezier(.1, .45, .1, .85) .5s
-  z-index: 10
-
-
-
-textarea:focus ~ .form_txt_area,
-input:focus ~ .form_inpu,
-input:focus ~ .form_btn 
-  transform: translate(-50%, 500%)
-  transition: all .5s ease-in
-
-
-textarea:focus ~ label .label-text,
-input:focus ~ label .label-text 
-  transform: translate(-50%, 300%)
-  transition: all .5s ease-in
-
-
-
-
-textarea:focus ~ .signup-button,
-input:focus ~ .signup-button,
-.form_btn:focus ~ .signup-button 
+  font-size: 2.3em
+  font-weight: bold
   opacity: 0
+  transition: all 1s
 
-
-textarea:focus + label .label-text,
-input:focus + label .label-text 
-  opacity: 1
-  transform: translate(-50%, -100%)
-  transition: all .3s cubic-bezier(.1, .45, .1, .85) .4s
-
-
-textarea:focus + label .nav-dot:before,
-input:focus + label .nav-dot:before 
-  background: darken($primary, 5%)
-  box-shadow: 0 0 0 .15rem $dark, 0 0 .05rem .26rem $primary
-
-
-
-
-.signup-button,
-.signup-button-trigger 
-  position: fixed
-  top: 50%
-  left: 50%
-  transform: translate(-50%, -100%)
-  width: 50vw
-  padding: .25rem 0
-  line-height: 3.6rem
-  text-align: center
-  pointer-events: none
-  cursor: pointer
-  transition: opacity .4s .3s
-
-
-.signup-button-trigger 
-  opacity: 0
-  pointer-events: auto
-
-
-.label-text 
-  position: fixed
-  top: calc(50% - 4rem)
-  left: 50%
-  transform: translate(-50%, -300%)
-  width: 50vw
-  padding: 3.125rem 0 1.5rem
-  text-transform: uppercase
-  color: #fff
-  opacity: 0
-  font-size: 1.125rem
-  font-weight: 300
-  letter-spacing: .125rem
-  pointer-events: none
-  transition: all .4s cubic-bezier(.4, .25, .8, .3) .05s
-
-
-.nav-dot 
-  cursor: pointer
-  position: fixed
-  padding: .625rem 1.25rem .625rem .625rem  
-  top: 52%
-  right: 1.25rem
-  &:before 
-    content: '' 
-    display: inline-block  
-    border-radius: 50%
-    width: .375rem
-    height: .375rem
-    margin-right: .625rem 
-    position: fixed
-    background-color: lighten($background, 3%)
-    border: 0
-    transition: all 0.25s
-  
-  &:hover:before 
-    width: .625rem
-    height: .625rem
-    margin-top: -.125rem
-    margin-left: -.125rem
-    background-color: darken($primary, 5%)
-  
-
-
-@for $i from 1 through 5 
-  label[for="input-#{$i}"] .nav-dot 
-      margin-top: -150px + (25 * $i)
-  
-
-
-// * 
-//   margin: 0
-//   padding: 0
-//   box-sizing: border-box
-
-
-// html, body 
-//   width: 100%
-//   height: 100%
-//   background-image: linear-gradient(to bottom right, $background 0%, $dark 100%)
-//   font-family: 'Lato', sans-serif
-
-
-form 
+.form_inputs
+  display: block
   width: 100%
-  height: 100%
-  overflow: hidden
+  background: transparent
+  border: none
+  padding: 20px 10px 10px
+  color: #eee
+  font-size: 1.2em
+  font-family: "Raleway", sans-serif
+  letter-spacing: 0.08em
+  outline: none
 
+.form_btn
+  color: #333
+  background-color: #eee
+  border: none
+  padding: 0.5em
+  width: 9em
+  transition: 0.3s
+  margin: 0.2em
+  text-transform: uppercase
+  font-size: 1.2em
+  font-weight: bold
+  cursor: pointer
 
+  &:hover
+    background-color: #ddd
+
+.input-bar
+  width: 80%
+  height: 1px
+  background-color: #555
+
+.progress-bar
+  width: 20%
+  height: 2px
+  background-color: $highlight
+
+.steps-navigation
+  float: right
+  padding: 30px
+
+.current label
+  opacity: 1
+  transition: all 1s
+
+@keyframes fadeIn
+  from
+    opacity: 0
+
+  to
+    opacity: 1
+
+@keyframes fadeInOut
+  0%
+    opacity: 0
+
+  50%
+    opacity: 1
+
+  100%
+    opacity: 0
 
 .hub_choose
-  height: 100px
+  height: 80px
   display: flex
   justify-content: center
-
-  .hub_name
-    margin-top: 0
-    font-size: 16px
 
 .hubs
   display: flex
   flex-direction: column
   margin-top: 10px
-  p
-    color: #fff
-    text-align: center
-    margin-bottom: 20px
-    font-size: 20px
-    
-  
 
+.hubs_input
+  margin-top: 150px
 
+.hubs p
+  color: #fff
+  text-align: center
+  margin-bottom: 20px
+  font-size: 20px
+
+.hub_name
+  margin-top: 0 
 
 .hub_check
   visibility: hidden
-
 
 .hub_img
   width: 80px
   height: 80px
   transition: linear 0.6s
 
-
 .hub_img_active
   width: 100px
   height: 100px
-
-
-
 
 .hub_labels
   margin: 0 10px
@@ -257,67 +138,55 @@ form
   flex-direction: column
 
 
+@media screen and (max-width: 768px) 
 
-@media screen and (max-width: 767px) 
-
-
-  .signup-button, .signup-button-trigger 
-    position: fixed
-    top: 60%
-    left: 50%
-    
-  
-  .nav-dot 
-    top: 65%
-    right: 1.25rem
-  
-  .form_txt_area, .form_input, .form_btn 
-    position: fixed
-    top: 60%
-    left: 50%
-  
-  
-  .label-text 
-    position: fixed
-    top: calc(60% - 4rem)
-    left: 50%
-    
-  
   .hub_labels
     .hub_name
       font-size: 14px
     
     
   
-
-
-
-
 @media screen and (max-width: 600px) 
   
   .hub_labels
-    margin: 0 5px
+    margin: 0 10px
     cursor: pointer
   
   .hub_choose 
     height: 50px
   
   .hub_img 
-    width: 50px
-    height: 50px
+    width: 55px
+    height: 55px
     transition: linear 0.6s
   
   .hub_img_active 
-    width: 60px
-    height: 60px
+    width: 65px
+    height: 65px
   
   .hub_labels
     .hub_name
       font-size: 12px
-    
-    
   
+
+  .form_inputs
+    width: 80%
+
+  .input-bar
+    margin-left: 40px
+
+  .progress-bar
+    width: 10%
+    margin-left: 40px
   
+  .form_labels 
+    font-size: 2em
+    margin-left: 40px
+
+  .form_btn 
+    width: 7em
+    
+
 
 
 @media screen and (max-width: 480px) 
@@ -326,36 +195,31 @@ form
     flex-direction: column
     margin-top: 25px
     p
-      font-size: 16px
+      font-size: 20px
+
+  
+  .hub_img 
+    width: 60px
+    height: 60px
+    transition: linear 0.6s
+  
+  .hub_img_active 
+    width: 70px
+    height: 70px
 
 
   .hub_labels 
     margin: 0 2px
     cursor: pointer
-  
 
-  .label-text 
-    font-size: 1rem
-  
-  .form_txt_area, .form_input 
-    font-size: 1.5rem
-  
-  .form_txt_area, .form_input, .form_btn 
-    width: 70vw
-    padding: 5px
-  
-  .signup-button, .signup-button-trigger 
-    width: 70vw
-  
-  .label-text 
-    width: 70vw
-  
-  .form_btn, .signup-button 
-    font-size: 22px
   
   .hub_labels
     .hub_name
       font-size: 10px
+
+  .hubs_input 
+    margin-top: 100px
+
     
     
   
@@ -363,20 +227,26 @@ form
 
 
 @media screen and (max-width: 360px) 
- 
- 
+  .hubs 
+    
+    margin-top: 10px
+
   .hub_img 
-    width: 40px
-    height: 40px
+    width: 45px
+    height: 45px
     transition: linear 0.4s
   
   .hub_img_active 
-    width: 50px
-    height: 50px
+    width: 55px
+    height: 55px
   
   .hub_labels
     .hub_name
       font-size: 6px
+
+  
+  .hubs_input 
+    margin-top: 80px
     
     
   

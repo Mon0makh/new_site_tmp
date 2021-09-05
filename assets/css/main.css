@@ -1218,7 +1218,7 @@ body {
   }
 
   .picture {
-    height: 280px;
+    height: 260px;
   }
 
   .detail span {
@@ -1434,6 +1434,7 @@ body {
 
   .form_inputs {
     width: 80%;
+    margin-left: 40px;
   }
 
   .input-bar {

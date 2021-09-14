@@ -384,7 +384,7 @@
            <li class="l-section section">
             <div class="hire">
               <div class="wrapper">
-                <form class="steps">
+                <form class="steps" action="#0">
                   <div class="hubs">
                     <p>Choose your hub</p>
                     <div class="hub_choose">
@@ -433,7 +433,7 @@
                     <div class="steps-navigation">
                       <button class="prev form_btn" data-bind="visible: step() > 1, click: prev">previous</button>
                       <button class="next form_btn" data-bind="visible: step() < 4, click: next">next</button>
-                      <button id="done" class="form_btn" data-bind="visible: step() == 4, click: next">done</button>
+                      <button id="done" type="submit" class="form_btn" data-bind="visible: step() == 4, click: next">done</button>
                     </div>
                   </div>
                 </form>

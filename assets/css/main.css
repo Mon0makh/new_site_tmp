@@ -773,30 +773,71 @@ body {
     max-width: 100%;
   }
 }
-.about h2 {
+.about .about_txt h2 {
   margin: 0 0 20px 0;
   font-size: 30px;
-  text-align: center;
 }
-.about .about_list li {
-  margin-bottom: 10px;
-  margin-left: 40px;
+.about .about_wrapper {
+  display: flex;
+}
+.about .about_player {
+  display: flex;
+  margin-left: 20px;
+}
+.about .video_player {
+  width: 600px;
+  height: 335px;
 }
 
 @media (max-width: 900px) {
-  .about_container {
+  .about .about_container {
     margin-top: 50px;
+  }
+  .about .about_player {
+    display: flex;
+    margin-left: 20px;
+  }
+  .about .video_player {
+    width: 500px;
+    height: 275px;
+    object-fit: cover;
   }
 }
 @media (max-width: 600px) {
+  .about .about_wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about .about_txt h2 {
+    margin: 20px 0;
+    font-size: 30px;
+    text-align: center;
+  }
+  .about .about_player {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
   .about .about_container {
     margin: 20px;
-    overflow: auto;
     height: 550px;
   }
   .about .about_list li {
     margin-bottom: 10px;
     margin-left: 0;
+  }
+}
+@media (max-width: 480px) {
+  .about .about_container {
+    margin: 0px;
+    height: 550px;
+  }
+  .about .video_player {
+    height: 225px;
+  }
+}
+@media (max-width: 360px) {
+  .about .video_player {
+    height: 190px;
   }
 }
 .team_slider {

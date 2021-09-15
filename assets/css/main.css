@@ -381,11 +381,7 @@ body {
     display: flex;
   }
 }
-@media(max-width: 359px) {
-  .device-notification {
-    display: flex;
-  }
-}
+
 .section {
   opacity: 0;
   visibility: hidden;
@@ -758,6 +754,11 @@ body {
     margin-left: 165px;
   }
 }
+@media (max-width: 320px) {
+  .intro--banner h1 {
+    font-size: 32px;
+  }
+}
 .about {
   position: relative;
   display: flex;
@@ -838,6 +839,12 @@ body {
 @media (max-width: 360px) {
   .about .video_player {
     height: 190px;
+  }
+}
+@media (max-width: 320px) {
+  .about .video_player {
+    width: 285px;
+    height: 170px;
   }
 }
 .team_slider {

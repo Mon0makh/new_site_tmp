@@ -758,6 +758,12 @@ body {
   .intro--banner h1 {
     font-size: 32px;
   }
+  .intro--banner h1 .h1_space_first {
+    margin-left: 85px;
+  }
+  .intro--banner h1 .h1_space_second {
+    margin-left: 185px;
+  }
 }
 .about {
   position: relative;
@@ -842,9 +848,12 @@ body {
   }
 }
 @media (max-width: 320px) {
-  .about .video_player {
-    width: 285px;
-    height: 170px;
+  .about .about_player {
+    margin-left: 15px;
+  }
+  .about .about_player .video_player {
+    width: 260px;
+    height: 150px;
   }
 }
 .team_slider {
